@@ -13,6 +13,6 @@ window.alert(B); // Write a variable value into the current HTML document
 
 function ButtonClick() {
     var ParagraphString = "I changed the text!"
-    document.getElementById("ParagraphText").innerHTML = ParagraphString
+    document.getElementById("Button_Text").innerHTML = ParagraphString
 }
 
