@@ -11,8 +11,14 @@ document.write(D + E); // Write a variable value into the current HTML document
 document.write(3 + 3); // Write an expression result into the current HTML document
 window.alert(B); // Write a variable value into the current HTML document
 
-function ButtonClick() {
-    var ParagraphString = "I changed the text!"
-    document.getElementById("Button_Text").innerHTML = ParagraphString
+function ButtonClick() { // Function prototyping, defining a Function
+    var ParagraphString = "I changed the text!"; // Variable assigned to a string
+    document.getElementById("ParagraphText").innerHTML = ParagraphString; // Calling a Method to change the text of an Element
+}
+
+function ButtonConcatenate() { // Function prototyping, defining a Function
+    var ParagraphString = "I changed the text"; // Variable assigned to a string
+    ParagraphString += " by using a function!"; // Concatenating a string
+    document.getElementById("Button_Concatenate").innerHTML = ParagraphString; // Calling a Method to change the text of an Element
 }
 
