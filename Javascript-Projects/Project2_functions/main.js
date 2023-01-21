@@ -22,3 +22,19 @@ function ButtonConcatenate() { // Function prototyping, defining a Function
     document.getElementById("Button_Concatenate").innerHTML = ParagraphString; // Calling a Method to change the text of an Element
 }
 
+function Subtraction() { // Function prototyping, defining a Function
+    var SubtractionVariable = 5 - 2; // Variable assigned to an arithmetic expression
+    document.getElementById("SubtractionParagraph").innerHTML = "5 - 2 = " + SubtractionVariable; // Calling a Method to change the text of an Element
+}
+
+function Multiplication() { // Function prototyping, defining a Function
+    var MultiplicationVariable = 5 * 2; // Variable assigned to an arithmetic expression
+    document.getElementById("MultiplicationParagraph").innerHTML = "5 * 2 = " + MultiplicationVariable; // Calling a Method to change the text of an Element
+}
+
+function MultiMath() { // Function prototyping, defining a Function
+    var MultiMath = 5 * 2 + 4 - 8 / 2; // Variable assigned to an arithmetic expression
+    document.getElementById("MultiMathParagraph").innerHTML = "5 * 2 + 4 - 8 / 2 = " + MultiMath; // Calling a Method to change the text of an Element
+}
+
+
