@@ -11,6 +11,23 @@ document.write(D + E); // Write a variable value into the current HTML document
 document.write(3 + 3); // Write an expression result into the current HTML document
 window.alert(B); // Write a variable value into the current HTML document
 
+var F = 5; // Variable assigned to a number
+F++; // Variable with an increment operator
+document.write(F); // Show the results of the increment
+
+var G = 5; // Variable assigned to a number
+G--; // Variable with a decrement operator
+document.write(G); // Show the results of the decrement
+
+
+document.write(Math.random()); // Print a random number
+
+document.write(math.random() * 100); // Print a random number mutliplied by 100
+
+document.write(Math.SQRT8); // Find the square root of 8.
+
+document.write(Math.ceil(8.7)); // Round 8.7 UP to it's nearest integer.
+
 function ButtonClick() { // Function prototyping, defining a Function
     var ParagraphString = "I changed the text!"; // Variable assigned to a string
     document.getElementById("ParagraphText").innerHTML = ParagraphString; // Calling a Method to change the text of an Element
@@ -33,8 +50,18 @@ function Multiplication() { // Function prototyping, defining a Function
 }
 
 function MultiMath() { // Function prototyping, defining a Function
-    var MultiMath = 5 * 2 + 4 - 8 / 2; // Variable assigned to an arithmetic expression
-    document.getElementById("MultiMathParagraph").innerHTML = "5 * 2 + 4 - 8 / 2 = " + MultiMath; // Calling a Method to change the text of an Element
+    var MultiMathVariable = 5 * 2 + 4 - 8 / 2; // Variable assigned to an arithmetic expression
+    document.getElementById("MultiMathParagraph").innerHTML = "5 * 2 + 4 - 8 / 2 = " + MultiMathVariable; // Calling a Method to change the text of an Element
+}
+
+function Modulus() { // Function prototyping, defining a Function
+    var ModulusVariable = 5 % 2; // Variable assigned to an arithmetic expression
+    document.getElementById("ModulusParagraph").innerHTML = "5 % 2 = " + ModulusVariable; // Calling a Method to change the text of an Element
+}
+
+function UnaryNegation() { // Function prototyping, defining a Function
+    var NegationVariable = 10; // Variable assigned to an arithmetic expression
+    document.getElementById("UnaryParagraph").innerHTML = " Negation Variable = " + -NegationVariable; // Calling a Method to change the text of an Element
 }
 
 
