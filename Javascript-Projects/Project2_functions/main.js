@@ -72,7 +72,7 @@ function AddOperator() { // Function prototyping, defining a Function
 
 function SubtractOperator() { // Function prototyping, defining a Function
     var SOperatorVariable = 10; // Variable assigned to a number
-    AOperatorVariable--; // Variable with a decrement operator
+    SOperatorVariable--; // Variable with a decrement operator
     document.getElementById("SoperatorParagraph").innerHTML = SOperatorVariable; // Calling a Method to change the text of an Element
 }
 
