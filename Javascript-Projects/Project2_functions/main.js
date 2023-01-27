@@ -65,14 +65,14 @@ function UnaryNegation() { // Function prototyping, defining a Function
 }
 
 function AddOperator() { // Function prototyping, defining a Function
-    var AOperatorVariable = 10; // Variable assigned to an arithmetic expression
-     // Variable assigned to a number
+    var AOperatorVariable = 10; // Variable assigned to a number
     AOperatorVariable++; // Variable with an increment operator
     document.getElementById("AoperatorParagraph").innerHTML = AOperatorVariable; // Calling a Method to change the text of an Element
 }
 
 function SubtractOperator() { // Function prototyping, defining a Function
-    var SOperatorVariable = 10; // Variable assigned to an arithmetic expression
+    var SOperatorVariable = 10; // Variable assigned to a number
+    AOperatorVariable--; // Variable with a decrement operator
     document.getElementById("SoperatorParagraph").innerHTML = SOperatorVariable; // Calling a Method to change the text of an Element
 }
 
