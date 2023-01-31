@@ -54,10 +54,12 @@ function Computerfunc() {
 
 function NestedFunction() { // Function prototyping, defining a Function
 
+    
     function NestedFunction2() {
         document.getElementById("NestedFunctionV").innerHTML = "Nested Function Test" // Calling a Method to change the text of an Element
     }
     
+    function NestedFunction2();
 }
 
 
