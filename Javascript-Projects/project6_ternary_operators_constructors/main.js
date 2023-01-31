@@ -59,7 +59,7 @@ function NestedFunction() { // Function prototyping, defining a Function
         document.getElementById("NestedFunctionV").innerHTML = "Nested Function Test" // Calling a Method to change the text of an Element
     }
     
-    function NestedFunction2();
+    NestedFunction2();
 }
 
 
