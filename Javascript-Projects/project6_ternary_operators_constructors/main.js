@@ -1,24 +1,10 @@
-function BaseInfinity() { // Function prototyping, defining a Function
-    document.getElementById("InfinityParagraph").innerHTML = 9E654; // Calling a Method to change the text of an Element
-}
-
-function NegativeInfinity() { // Function prototyping, defining a Function
-
-    document.getElementById("NegativeInfinityParagraph").innerHTML = -9E654; // Calling a Method to change the text of an Element
-}
+var VarA = 42;
 
 function Ride_Function() { // Function prototyping
     var Height, Can_ride; // Variable definition
     Height = document.getElementById("Height").value; // Finding the element to edit
     Can_ride = (Height < 52) ? "You are too short":"You are tall enough"; // Value comparison with a conditional operator
     document.getElementById("Ride").innerHTML = Can_ride + " to ride."; // Change the text to the proper value
-}
-
-function Vote_Function() { // Function prototyping
-    var Age, Can_vote; // Variable definition
-    Age = document.getElementById("Age").value; // Finding the element to edit
-    Can_vote = (Age < 18) ? "You are not old enough":"You are old enough"; // Value comparison with a conditional operator
-    document.getElementById("VoteMachine").innerHTML = Can_vote + " to vote."; // Change the text to the proper value
 }
 
 function Vehicle(Make, Model, Year, Color) { // Create a class
@@ -31,35 +17,55 @@ var Jack = new Vehicle("Dodge", "Viper", 2020, "Red") // Create class constructo
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black")
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard")
 
-function myFunction() {
+function myFunction() { // Function prototyping
     document.getElementById("New_and_This").innerHTML = // Set the text to class instance properties
     "Erik drives a" + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
 }
 
-function Computer(MB, PSU, CPU, GPU) { // Create a class
-    this.Motherboard = MB; // Create class properties
-    this.PowerSupply = PSU; // Create class properties
-    this.CentralProcessing = CPU; // Create class properties
-    this.GraphicsProcessing = GPU; // Create class properties
-}
-
-var Average = new Computer("Asus MTX", "Gen PSU", "Intel I5", "GTX 1060") // Create class constructor
-
-function Computerfunc() {
-    document.getElementById("Computer_Example").innerHTML = // Set the text to class instance properties
-    "This computer has a " + Average.Motherboard + "with a " + Average.PowerSupply +
-    " and the CPU is a " + Average.CentralProcessing
-}
-
-function NestedFunction() { // Function prototyping, defining a Function
-
-    
-    function NestedFunction2() {
-        document.getElementById("NestedFunctionV").innerHTML = "Nested Function Test" // Calling a Method to change the text of an Element
+function get_Date() { // Function prototyping
+    if (new Date().getHours() < 18 ) { // Get the current time in hours
+    document.getElementById("Greeting").innerHTML = "How are you today?";
     }
-    
-    NestedFunction2();
 }
 
+function if_statement() { // Function prototyping
+    var VarB = 2;
+    if (1 < VarB) { // Conditional statement comparison
+        document.write("2 is greater than 1")
+    }
 
+}
+
+function Age_Function() { // Function prototyping
+    Age = document.getElementById("Age").value;
+    if (Age >= 18) { // Conditional statement comparison
+        Vote = "You are old enough to vote!";
+    }
+    else {
+        Vote = "You are not old enough to vote!";
+    }
+    document.getElementById("How_old_are_you?").innerHTML = Vote;
+}
+
+function Time_function() { // Function prototyping
+    var Time = new Date().getHours; // Get the current time in hours
+    var Reply;
+    if (Time < 12 == Time > 0) { // Conditional statement comparison
+        Reply = "It is afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
+
+function ErrorFunction() { // Function prototyping
+    var VarB = 2;
+    if (1 < VarB)  // Conditional statement comparison
+        document.write("2 is greater than 1")
+    }
+
+}
+
+console.log(ErrorFunction); //Console Log command
