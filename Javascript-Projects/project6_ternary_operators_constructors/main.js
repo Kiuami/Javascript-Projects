@@ -51,7 +51,7 @@ function Age_Function() { // Function prototyping
 function Time_function() { // Function prototyping
     var Time = new Date().getHours; // Get the current time in hours
     var Reply;
-    if (Time < 12 == Time > 0) { // Conditional statement comparison
+    if (Time < 12 && Time > 0) { // Conditional statement comparison
         Reply = "It is afternoon.";
     }
     else {
@@ -62,7 +62,7 @@ function Time_function() { // Function prototyping
 
 function ErrorFunction() { // Function prototyping
     var VarB = 2;
-    if (1 < VarB)  // Conditional statement comparison
+    if (1 < VarB) { // Conditional statement comparison
         document.write("2 is greater than 1")
     }
 
