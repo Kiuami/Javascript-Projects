@@ -5,26 +5,23 @@
 <head>
 
 <title>Play Tic Tac Toe Online!</title>
-<meta charset="utf-8">
+
+<meta charset="UTF-8">
 <meta name='viewport' content="width=device-width, initial-scale=1.0">
+
+</head>
 
 <link rel="stylesheet" type="text/css" href="css/game.css">
 
 <script src="js/tictactoe.js"></script>
 
-</head>
+<body id="body"> <!--Test -->
 
-
-
-<body id="body">
-
-  <!--Custom HTML here, I added this line-->
-
-  <h1> Tic-Tac-Toe </h1>
+  <h1 style="text-align: center"> Tic-Tac-Toe </h1> <!--Custom HTML here, I added this line-->
   
-  <div class="center-container">
+  <div class="center-container"> <!--This container is needed to overlay our canvas over our table-->
 
-    <canvas id="win-lines" width="608" height="608"></canvas>
+    <canvas id="win-lines" width="608" height="608"></canvas> <!--NOTE: Canvas width and height must be within the element.-->
     <table>
       <tr>
         <td id="0" onclick='placeXOrO("0")'></td>
