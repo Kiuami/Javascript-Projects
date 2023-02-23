@@ -136,3 +136,21 @@ function audio(audioURL) {
     let audio = new Audio(audioURL); //We create a new audio object and we pass the path as a parameter.
     audio.play(); //Play method plays our audio sound.
 }
+
+
+function drawWinLine(coordX1, coordY1, coordX2, coordY2) { //This function utilizes HTML canvas to draw win lines.
+    const canvas = document.getElementById('win-lines'); //This line accesses our HTML canvas element.
+    const c = canvas.getContext('2d'); //This line gives us access to methods and properties to use on canvas.
+
+    let x1 = coordX1 //This line indicates where the start of a lines x axis is.
+
+    y1 = coordY1 //This line indicates where the start of a lines y axis is.
+
+    x2 = coordX2 //This line indicates where the end of a lines x axis is.
+
+    y2 = coordY2 //This line indicates where the end of a lines y axis is.
+
+    x = x1 //This variable stores temporary x axis data we update in our animation loop.
+
+    y = y1 //This line indicates where the start of a lines x axis is.
+}
