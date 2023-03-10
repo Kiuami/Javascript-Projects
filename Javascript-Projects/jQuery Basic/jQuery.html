@@ -8,8 +8,10 @@
 
     <body>
     <script>
-       $(document).ready(function() {
-            $('html').append(
+       $(document).ready(function() { //Modify the current html in the document, 
+        //the $ is a short way of calling jQuery functions
+
+            $('html').append( //Insert this code into the body of our html.
                 "<body>\
                     <div id='container'>\
                         <div id='inner'>\
@@ -21,8 +23,8 @@
                 </div>\
             </body>"
         );
-       $("#2").css({"color":"red"});
-       $("#3").click(function() {
+       $("#2").css({"color":"red"}); //The #2 refers to id 2 and to change the color of that text.
+       $("#3").click(function() { //When the third paragraph text is clicked on, then it should hide the h1
             $("h1").hide();
        });
 
